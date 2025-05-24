@@ -48,7 +48,7 @@ pip install pandas numpy
 
 ---
 
-## Folder Setup
+## Folder Setup (this is a suggestion for simplicity, may vary for you)
 
 Create a directory `crashLogs` in the following path to enable automatic CSV detection and saving:
 
@@ -76,7 +76,7 @@ Ensure that both scripts run on the same machine or adjust the paths accordingly
    python hash2csv.py
    ```
 2. Enter a valid 64-character server seed hash.
-3. Set the number of simulations (e.g., 10000).
+3. Set the number of past carsh multipliers you require (e.g., 10000, meaning last 10000 crash multipliers will be fetched from the server seed). Note: index [1] has the multiplier forw whhich the hash you entered (latest multiplier) and index [10000] has the oldest multiplier.
 4. Optionally check the box for `stake.us` mode.
 5. Click `Run Simulation` to generate and analyze crash multipliers.
 
