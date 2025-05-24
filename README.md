@@ -7,23 +7,23 @@ This repository provides two powerful Python Tkinter-based GUI tools for analyzi
 
 ## Project Structure
 
-- `test1.py`: **Sub-2x Streak Analyzer GUI**  
+- `decomposeCrash.py`: **Sub-2x Streak Analyzer GUI**  
   Loads `.csv` files of crash multipliers, finds and visualizes sub-2.00x streaks, and summarizes their frequency and sequences interactively.
 
-- `test2.py`: **Crash Multiplier Simulator GUI**  
+- `hash2csv.py`: **Crash Multiplier Simulator GUI**  
   Simulates crash multipliers using a given server seed (SHA256 hash chain), generates statistical summaries (mean, median, percentiles, gaps, etc.), and exports the result to a `.csv` file.
 
 ---
 
 ## Features
 
-### `test1.py` Highlights
+### `decomposeCrash.py` Highlights
 - Detects all sub-2.00x streaks from historical `.csv` logs.
 - Displays start indices and sequences for each streak length.
 - Frequency breakdown for streak lengths ≥3.
 - GUI auto-loads latest `.csv` from `crashLogs` folder.
 
-### `test2.py` Highlights
+### `hash2csv.py` Highlights
 - Accepts a server seed hash and generates a hash chain to compute crash multipliers.
 - Finds all sub-2.00x streaks and identifies the top 100 by length.
 - Computes detailed statistics:
@@ -62,18 +62,18 @@ Ensure that both scripts run on the same machine or adjust the paths accordingly
 
 ## Usage
 
-### For `test1.py`:
+### For `decomposeCrash.py`:
 1. Run the script:
    ```bash
-   python test1.py
+   python decomposeCrash.py
    ```
 2. Load a `.csv` crash log file or let the script auto-detect the latest one.
 3. Explore the streak list and view details in the GUI.
 
-### For `test2.py`:
+### For `hash2csv.py`:
 1. Run the script:
    ```bash
-   python test2.py
+   python hash2csv.py
    ```
 2. Enter a valid 64-character server seed hash.
 3. Set the number of simulations (e.g., 10000).
